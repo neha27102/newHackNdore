@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.metric-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.metric-card h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+select, button {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+.chart-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .metrics {
+        flex-direction: column;
+    }
+
+    .metric-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* bill css... */
+
+.bill-details {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bill-details h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+}
