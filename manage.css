@@ -1,119 +1,230 @@
+/* Basic Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-h1 {
-    color: #333;
+/* Header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
     text-align: center;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+/* Metrics Section */
 .metrics {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
 .metric-card {
     background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
 }
 
 .metric-card h2 {
-    margin-top: 0;
-    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
 }
 
+.metric-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Controls Section */
 .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
-select, button {
+.controls select, .controls button {
     padding: 10px;
-    margin-right: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
-button {
-    background: #333;
-    color: #fff;
+.controls button {
+    background-color: #007bff;
+    color: white;
     border: none;
     cursor: pointer;
 }
 
-button:hover {
-    background: #555;
+.controls button:hover {
+    background-color: #0056b3;
 }
 
+/* Chart Container */
 .chart-container {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+}
+
+/* Forms Wrapper */
+.forms-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .form-container {
     background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    flex: 1 1 calc(50% - 20px);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.form-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
-label {
-    margin-top: 10px;
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-input, select {
+.form-container input, .form-container select, .form-container button {
+    width: 100%;
+    padding: 10px;
     margin-bottom: 10px;
-    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
+.form-container button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 
+.form-container button:hover {
+    background-color: #218838;
+}
+
+.bill-details {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .metrics {
         flex-direction: column;
     }
 
     .metric-card {
-        width: 100%;
-        margin-bottom: 10px;
+        flex: 1 1 100%;
     }
 
-    /* bill css... */
+    .controls {
+        flex-direction: column;
+    }
 
-.bill-details {
-    margin-top: 20px;
+    .controls select, .controls button {
+        width: 100%;
+    }
+
+    .form-container {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .metric-card h2 {
+        font-size: 1rem;
+    }
+
+    .metric-card p {
+        font-size: 1.25rem;
+    }
+
+    .controls select, .controls button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007bff;
+    color: #fff;
     padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.bill-details h3 {
-    margin-top: 0;
-    color: #333;
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+.footer-content p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-content p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content p {
+        font-size: 0.7rem;
+    }
 }

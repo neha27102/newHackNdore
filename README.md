@@ -5,9 +5,8 @@ Here is a suggested README file for your GitHub repository:
 # water management system 
 
 
-- **Emergency Response**: Features to enhance response times and coordination during emergencies.
-- **Health Monitoring**: Systems to track and improve public health metrics.
-- **Pollution Control**: Mechanisms to monitor and reduce environmental pollution.
+- **Emergency Response**: Features to enhance response times and coordination during emergencies like leakages and many more.
+- **Volume Monitoring**: Systems to track the volume of water sent to each house hold and if it goes above limit it will charge extra money
 
 ## Installation
 To set up the project locally, follow these steps:
