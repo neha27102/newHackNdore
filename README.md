@@ -55,4 +55,9 @@ Neha Bhadkare
 GitHub: github.com/neha27102
 Email: nehabhadkare.dev@gmail.com
 
+## Team
+Built by a team at Hack Indore (July 2024).
+- Neha Bhadkare
+- Tanishq Lalge
+- Lakshay Bagora
 ---
