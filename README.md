@@ -47,6 +47,12 @@ Access the application at `http://localhost:3000`.
 
 
 ## Contact
-For any inquiries or feedback, please contact-(lalgetanishk@gmail.com).
+For any inquiries or feedback, please contact-(nehabhadkare.dev@gmail.com).
+
+
+## Author
+Neha Bhadkare
+GitHub: github.com/neha27102
+Email: nehabhadkare.dev@gmail.com
 
 ---
